@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Preview</title>
+  <style>
+    #image {
+      height: 300px;
+      width: 400px;
+      border: 1px solid black;
+      background-color: #eee;
+      background-image: url("");
+      background-size: cover;
+      text-align: center;
+      line-height: 300px;
+      font-size: 20px;
+      color: #333;
+    }
+    img.preview {
+      width: 100px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <script src="cousera.js"></script>
+  <div id="image">Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.</div>
+  <br>
+  <img class="preview" src="https://placekitten.com/200/300" alt="Mèo con dễ thương" 
+       onmouseover="update(this)" onmouseout="undo()">
+  <img class="preview" src="https://placekitten.com/250/300" alt="Mèo con lông dài" 
+       onmouseover="update(this)" onmouseout="undo()">
+  <img class="preview" src="https://placekitten.com/300/300" alt="Mèo con nhìn camera" 
+       onmouseover="update(this)" onmouseout="undo()">
+</body>
+</html>
